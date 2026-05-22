@@ -1,0 +1,20 @@
+var input = require("readline-sync");
+
+var n1 = input.questionInt("digite o primeiro numero: ");
+var n2 = input.questionInt("digite o segundo numero:nod");
+
+var soma = n1 + n2;
+var subtrai = n1 - n2;
+var multiplica = n1 * n2;
+var divide = n1 / n2;
+
+console.log("Soma: " + soma);
+console.log("Subtracao: " + subtrai);
+console.log("Multiplicacao: " + multiplica);
+console.log("Divisao: " + divide);
+
+if (n2 == 0) {
+    console.log("Erro: divisao por zero");
+}
+
+console.log("os resultados são: " + soma + ", " + subtrai + ", " + multiplica + ", " + divide);
