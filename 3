@@ -1,0 +1,33 @@
+var input = require("readline-sync");
+var num1 = input.questionInt("digite o primeiro numero:");
+var num2 = input.questionInt("digite o segundo numero:");
+
+function somar() {
+    var resultadoSoma = num1 + num2;
+    console.log(resultadoSoma);
+}
+
+function subtracao() {
+    var resultadoSub = num1 - num2;
+    console.log(resultadoSub);
+}
+
+function multiplicacao() {
+    var resultadoMult = num1 * num2;
+    console.log(resultadoMult);
+}
+
+function divisao() {
+    var resultadoDiv = num1 / num2;
+    console.log(resultadoDiv);
+}
+
+if (num2 == 0) {
+    console.log("Erro: divisao por zero");
+}
+
+console.log("os resultados são: ");
+somar();
+subtracao();
+multiplicacao();
+divisao();
