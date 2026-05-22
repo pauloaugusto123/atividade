@@ -1,0 +1,10 @@
+var input = require("readline-sync");
+var senha = input.question("senha: ");
+
+var tamanho = senha.length;
+
+if (tamanho > 8) {
+    console.log("senha valida");
+} else {
+    console.log("senha invalida - minimo de 8 caracteres");
+}
