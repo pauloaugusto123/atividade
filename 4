@@ -1,0 +1,22 @@
+var input = require("readline-sync");
+var a = input.questionInt("insira o primeiro numero: ");
+var b = input.questionInt("insira o segundo numero: ");
+
+console.log("Escolha a operacao: 1 para Soma, 2 para Subtracao, 3 para Multiplicacao");
+var operacao = input.questionInt("insira o parametro: ");
+
+function executarOperacao(num1, num2, escolha) {
+    if (escolha == 1) {
+        return num1 + num2;
+    }
+    if (escolha == 2) {
+        return num1 - num2;
+    }
+    if (escolha == 3) {
+        return num1 * num2;
+    }
+}
+
+var resultado = executarOperacao(a, b, operacao);
+
+console.log("os resultados são: " + resultado);
